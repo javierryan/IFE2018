@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>header5</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <style>
+    h2,p{
+        font-family: Century Gothic;
+        text-align:center;
+        width:600px;
+        margin:0 auto;
+        margin-top:20px;
+        margin-bottom: 20px;
+    }
+    h2{
+        font-size:2.8em;
+    }
+
+    /*相同位置两个div重叠*/
+    .four{
+        width:820px;
+        display: flex;
+        justify-content:space-between;
+        flex-flow:wrap;
+        margin:0 auto;
+        margin-top:40px;
+        box-sizing:border-box;
+    }
+    .aa{
+        position:relative;
+        margin-bottom:16px;
+    }
+    .four img{
+        width:400px;
+        height:320px;
+        box-sizing:border-box;
+        margin:0 auto;
+    }
+    .black{
+        width:400px;
+        height:320px;
+        background-color: black;
+        opacity:0;
+        position:absolute;
+        top:0;
+        left:0;
+    }
+    .black:hover{
+        opacity:0.6;
+    }
+    </style>
+</head>
+<body>
+    <h2>Our Awesome Crew</h2>
+    <p>Our unique online teaching style makes learning easy for everyone. Whether you are trying to land a new job, brush up on your skills.</p>
+    <div class="four">
+        <div class="aa">
+        <img src="https://shillyli.github.io/FCC-Item/Beautiful-Page/img/person_1.jpeg">
+        <div class="black"></div>
+        </div>
+        <div class="aa">
+        <img src="https://shillyli.github.io/FCC-Item/Beautiful-Page/img/person_2.jpg">
+        <div class="black"></div>
+        </div>
+        <div class="aa">
+        <img src="https://shillyli.github.io/FCC-Item/Beautiful-Page/img/person_3.jpg">
+        <div class="black"></div>
+        </div>
+        <div class="aa">
+        <img src="https://shillyli.github.io/FCC-Item/Beautiful-Page/img/person_4.jpg">
+        <div class="black"></div>
+        </div>
+        </div>
+    </div>
+</body>
+</html>
